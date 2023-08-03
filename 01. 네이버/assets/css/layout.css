@@ -1,8 +1,20 @@
 @charset "utf-8";
+
+#wrap {margin:0 auto; padding:0 20px; width:1320px; max-width:100%}
+
 /* HEADER */
+.topBtn {display:flex; justify-content:space-between}
+.topBtn .right {display:flex}
+.topTooltip button:hover {border-radius:50%; background-color:#e7eced}
+.btnMenu {display:inline-block; width:46px; height:46px; text-indent:-9999px; background:url("../images/main/btn-menu.png") no-repeat center/26px auto}
+.btnPay {display:inline-block; width:46px; height:46px; text-indent:-9999px; background:url("../images/main/btn-pay.png") no-repeat center/30px auto}
+.btnNotify {display:inline-block; width:46px; height:46px; text-indent:-9999px; background:url("../images/main/btn-notify.png") no-repeat center/26px auto}
 
-
-/* GNB */
+.tooltip span {display:none}
+.searchArea {position:relative; margin:0 auto; padding-left:68px; border:1px solid #03c75a; border-radius:33px; width:706px}
+.searchArea h1 {position:absolute; top:0; left:0; width:30px; height:30px; background-color:red}
+.searchArea h1 a {display:block; width:24px; height:24px; text-indent:-9999px; background:url("../images/main/logo.png") no-repeat center/100% auto}
+.searchArea input {border:0}
 
 
 /* CONTAINER */

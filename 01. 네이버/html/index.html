@@ -6,8 +6,9 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="format-detection" content="telephone=no, address=no, email=no">
 <!-- E : mobile -->
-<title>aaaa</title>
+<title>NAVER</title>
 <link rel="stylesheet" href="../assets/css/style.css" />
+<link rel="shortcut icon" type="image⁄x-icon" href="../assets/images/favicon.png">
 <script src="../assets/js/jquery-2.2.4.js"></script>
 <script src="../assets/js/common.js"></script>
 <!-- <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,26 +33,65 @@
 	<div id="header">
 		<!-- inner -->
 		<div class="inner">
-			
+			<!-- topBtn -->
+			<div class="topBtn">
+				<div class="left">
+					<div class="topTooltip tooltip">
+						<button type="button" class="btnMenu">바로가기</button>
+						<span>바로가기</span>
+					</div>
+				</div>
+				<div class="right">
+					<div class="topTooltip tooltip">
+						<button type="button" class="btnPay">네이버페이</button>
+						<span>네이버페이</span>
+					</div>
+					<div class="topTooltip tooltip">
+						<button type="button" class="btnNotify">알림혜택</button>
+						<span>알림<em>&middot;</em>혜택</span>
+					</div>
+				</div>
+			</div>
+			<!--// topBtn -->
+			<!-- searchArea -->
+			<div class="searchArea">
+				<h1><a href="">NAVER</a></h1>
+				<input type="text" title="검색어" placeholder="검색어를 입력해 주세요.">
+				<div class="keyboardTooltip tooltip">
+					<button type="button" class="btnKeyboard">입력도구</button>
+					<span>입력도구</span>
+				</div>
+				<div class="autoComplete">
+					<button type="button" class="btnArrow">자동완성</button>
+					<div class="autoCompleteCont">
+						<p>검색어 저장 기능이 꺼져 있습니다.</p>
+						<span>설정이 초기화 된다면 <a href="" title="네이버 고객센터 홈페이지 새 창으로 열기">도움말</a>을 확인해주세요.</span>
+						<div class="autoCompleteContBottom">
+							<a href="" title="네이버 검색어 고객센터 홈페이지 새 창으로 열기">도움말</a>
+							<button type="button">자동저장 켜기</button>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="btnSearch">검색</button>
+			</div>
+			<!--// searchArea -->
 		</div>
 		<!--// inner -->
-		<!-- gnb -->
-		<div id="gnb">
-			<a href="">aaa</a>
-		</div>
-		<!--// gnb -->
+		
 	</div>
 	<!--// header -->
 
 	<!-- container -->
-	<div id="container" style="display:inline-block">
+	<div id="container">
 		<!-- contents -->
 		<div class="contents">
-			<script>
-			$(function(){
-				$("title").text("컨텐츠 제목 < (이하생략···) 2depth 제목 < 1depth 제목 < 홈페이지명");
-			})
-			</script>
+			<div class="rowTable">
+				<caption></caption>
+				<colgroup>
+					<col style="width:100px">
+					<col style="width:auto">
+				</colgroup>
+			</div>
 		</div>
 		<!--// contents -->
 	</div>
@@ -78,42 +118,6 @@ $(function(){
 	});
 })
 </script>
-
-
-
-
-
-
-<script>
-$(function(){
-	var depth01 = $(".location > li").eq(1).find("> a").text(),
-		depth02 = $(".location > li").eq(2).find("> a").text(),
-		depth03 = $(".location > li").eq(3).find("> a").text();
-		if(depth01.length){
-			if(depth02.length){ 
-				if(depth03.length){
-					$("title").text(depth03 + " < " + depth02 + " < " + depth01 + " < 홈페이지 로고 24");
-				}else{
-					$("title").text(depth02 + " < " + depth01 + " < 홈페이지 로고 24");
-				}
-			}else{
-				$("title").text(depth01 + " < 홈페이지 로고 24");
-			}
-		}else{
-			$("title").text("홈페이지 로고 24");
-		}
-})
-</script>
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
